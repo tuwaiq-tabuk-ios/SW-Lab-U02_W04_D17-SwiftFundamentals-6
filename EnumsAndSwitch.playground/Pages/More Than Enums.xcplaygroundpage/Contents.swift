@@ -17,6 +17,8 @@ func soundFor(animal: String) -> String {
             return "Moo!"
         case "chicken":
             return "Cluck!"
+        case "Lion": //The animal I have added
+            return "Roar!"
         default:
             return "I don't know that animal!"
     }
@@ -28,10 +30,11 @@ soundFor(animal: animal)
 \
 Add a few more animal cases to the switch statement and call the function to test the new cases.
  */
+soundFor(animal: "chicken")
+soundFor(animal: "cow")
+soundFor(animal: "tiger")
 
-
-
-
+soundFor(animal: "Lion")
 
 /*:
 Next revisit the cafeteria example using a switch statement.
