@@ -28,8 +28,8 @@
  
  Rewriting the function to use each specific case doesn't help the situation much:
 */
-enum LunchChoice {
-    case pasta, burger, soup
+/*enum LunchChoice {
+    case pasta, burger, soup , kabsa
 }
 
 func cookLunch(_ choice: LunchChoice) -> String {
@@ -42,7 +42,7 @@ func cookLunch(_ choice: LunchChoice) -> String {
     }
     return "Erm... how did we get here?"
 }
-cookLunch(.soup)
+cookLunch(.soup)*/
 /*: 
  You still need the final `return` statement. Otherwise the function causes an error because it can’t be sure you’ve covered all the possible cases in the if statements.
  
@@ -53,3 +53,21 @@ _(Hint: How would you get an enum value that didn’t match anything in the if s
 
 [Previous](@previous)  |  page 8 of 21  |  [Next: Switch](@next)
 */
+enum LunchChoice {
+    case pasta, burger, soup , kabsa, pitza
+}
+
+func cookLunch(_ choice: LunchChoice) -> String {
+    if choice == .pasta {
+        return "🍝"
+    } else if choice == .burger {
+        return "🍔"
+    } else if choice == .soup {
+        return "🍲"
+    }
+    return "Erm... how did we get here?"
+}
+
+
+cookLunch(.kabsa)
+cookLunch(.pitza)

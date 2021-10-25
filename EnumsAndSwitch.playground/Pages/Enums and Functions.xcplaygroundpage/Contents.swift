@@ -22,7 +22,9 @@ func cookLunch(_ choice: LunchChoice) -> String {
 
 cookLunch(.burger)
 //: - experiment: Call the function a few more times, passing in different food choices.
-
+cookLunch(.burger)
+cookLunch(.pasta)
+cookLunch(.soup)
 
 
 /*:
@@ -35,3 +37,6 @@ cookLunch(.burger)
 [Previous](@previous)  |  page 7 of 21  |  [Next: The Problem with If](@next)
 */
  
+cookLunch(.burger)
+cookLunch(.pasta)
+cookLunch(.soup)

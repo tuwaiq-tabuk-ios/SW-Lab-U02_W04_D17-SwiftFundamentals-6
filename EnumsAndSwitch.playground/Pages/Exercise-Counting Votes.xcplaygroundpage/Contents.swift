@@ -1,10 +1,10 @@
 /*:
  ## Exercise: Counting Votes
-
+ 
  In the Arrays and Loops playground, you had a chance to create a function that would tally votes from classmates. At the time, you could only ask yes-no questions that could be held in Boolean results.
  
  You were worried that using strings would result in voting mistakes from typos. But now that you’ve studied enums, you can safely make your voting system a bit more sophisticated:
-*/
+ */
 
 enum ClassTripDestination {
     case beach, chocolateFactory
@@ -34,9 +34,47 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  - callout(Exercise):
  Without counting by hand, determine which option has won.
  
-
+ 
  - experiment:
  In the Arrays and Loops vote counting exercise, an extension exercise asked you to write a single function that could calculate the results of any Boolean vote. What prevents you from writing a single function for calculating both `tripDestinationVotes` and `mascotVotes`?
  */
 
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)
+
+var chocolatefactory = 0
+var beachVotes = 0
+
+for tripDestinationVotes in tripDestinationVotes {
+    switch tripDestinationVotes {
+    case .beach:
+        beachVotes += 1
+    default:
+        
+        chocolatefactory += 1
+    }
+}
+
+var marmotVotes = 0
+
+var salamanderVotes = 0
+
+var neitherVotes = 0
+
+for mascotVotes in mascotVotes {
+    switch mascotVotes {
+    
+    case .marmot:
+        
+        marmotVotes += 1
+        
+    case .salamander:
+        salamanderVotes += 1
+        
+    case .neither:
+        neitherVotes += 1
+        
+        
+    }
+}
+
+
