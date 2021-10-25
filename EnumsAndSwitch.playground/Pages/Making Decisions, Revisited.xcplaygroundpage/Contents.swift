@@ -20,6 +20,7 @@ cookLunch(choice: "pasta")
 
 
 
+
 /*:
  This function has the following drawbacks:
  
@@ -30,3 +31,8 @@ cookLunch(choice: "pasta")
 
 [Previous](@previous)  |  page 2 of 21  |  [Next: Enumerations](@next)
 */
+cookLunch(choice: "pasta")
+cookLunch(choice: "burger")
+cookLunch(choice: "pizza")
+
+//The emoji hasn't changed

@@ -15,3 +15,18 @@ chickenOfInterestCount
 //: - callout(Exercise): Update the code in the `for…in` loop to only count interesting chickens, like `.hilarious` `.leghorn`s. Check out the autocompletion popup to see what the possible values for each enum are.
 
 //: [Previous](@previous)  |  page 18 of 21  |  [Next: Exercise: Replacing Bools](@next)
+var chickenOfInterestCount1 = 0
+for chicken in chickens {
+  switch chicken.temper {
+  case .hilarious:
+    chickenOfInterestCount += 1
+  default:
+    print("Dont't count")
+  }
+  switch chicken.breed {
+  case.leghorn:
+    chickenOfInterestCount += 1
+  default:
+    print("don't count")
+  }
+}
