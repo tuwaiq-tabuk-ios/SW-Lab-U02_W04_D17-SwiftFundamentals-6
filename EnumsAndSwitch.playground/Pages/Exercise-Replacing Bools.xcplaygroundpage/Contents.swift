@@ -17,3 +17,12 @@ struct Enemy {
 
 [Previous](@previous)  |  page 19 of 21  |  [Next: Exercise: Counting Votes](@next)
 */
+enum kindOfWeapon {
+    case none, sword, rubberMallet
+}
+
+struct Enemy2 {
+    let strength: Int
+    let speed: Int
+    let weapon: kindOfWeapon
+}
