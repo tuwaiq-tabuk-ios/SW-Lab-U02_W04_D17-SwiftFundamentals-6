@@ -21,6 +21,8 @@ enum LunchChoice {
 }
 let lunch = LunchChoice.pasta
 lunch.emoji
+
+print (lunch.emoji)
 /*: 
  The `self` keyword is used in methods and calculated properties and refers to the instance that is being asked for the property value.
  
@@ -42,6 +44,8 @@ enum Suit {
         case .hearts: return 3
         case .diamonds: return 2
         case .clubs: return 1
+       
+        
         }
     }
     
@@ -62,3 +66,22 @@ oneSuit.beats(oneSuit)
  
 [Previous](@previous)  |  page 15 of 21  |  [Next: Wrapup](@next)
 */
+
+
+
+func gamess (_ play: Suit)->String{
+  
+  switch play {
+  
+  case .clubs:
+   return "♠️"
+  case .hearts :
+    return "❤️"
+  case .diamonds :
+    return "♣️"
+  case .spades :
+    return "♦️"
+  }
+
+  }
+
