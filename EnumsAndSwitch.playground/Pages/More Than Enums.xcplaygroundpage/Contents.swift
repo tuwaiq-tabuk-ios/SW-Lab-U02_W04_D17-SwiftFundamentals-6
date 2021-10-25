@@ -38,3 +38,6 @@ Next revisit the cafeteria example using a switch statement.
  
 [Previous](@previous)  |  page 13 of 21  |  [Next: Back to the Cafeteria](@next)
 */
+soundFor(animal: "dog")
+soundFor(animal: "cat")
+soundFor(animal: "mouse")
