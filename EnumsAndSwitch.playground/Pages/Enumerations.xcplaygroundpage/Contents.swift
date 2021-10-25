@@ -7,6 +7,7 @@ enum LunchChoice {
     case pasta
     case burger
     case soup
+  
 }
 /*: 
 The declaration above creates a new type, `LunchChoice`. Instances of `LunchChoice` can only be one of the three defined cases.
@@ -24,13 +25,18 @@ let choice = LunchChoice.burger
 //: One benefit of an enum is it limits the choices to one of its cases. You can’t order off-menu.\
 //: Uncomment the line below to see the error, then comment it out again when you’re done:
 //let special = LunchChoice.fish
+// No fish identifier
 /*:
  
  - experiment: Create some constants yourself for different cases in the enum. Notice how autocompletion shows you the possible options.
 */
+enum mornengTrinng {
+    case Run
+    case crosFit
+    case geming
+}
 
-
-
+let choice1 = mornengTrinng.Run
 /*:
  Next learn about how the type system understands enums.\
 [Previous](@previous)  |  page 3 of 21  |  [Next: Enums and Type Inference](@next)

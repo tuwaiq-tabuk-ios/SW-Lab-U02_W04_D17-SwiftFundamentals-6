@@ -16,9 +16,18 @@ let tripDestinationVotes: [ClassTripDestination] = [.beach, .chocolateFactory, .
  - callout(Exercise):
  Without counting the votes by hand, find out whether the students prefer the chocolate factory or the beach. *Hint: Check the Arrays and Loops playground for a refresher on working with collections of data.*
  */
+var beachVots = 0
+var chocolateFactoryVotes = 0
+for tripDestinztioVote in tripDestinationVotes{
 
-
-
+switch tripDestinztioVote {
+case .beach:
+  beachVots += 1
+default:
+  chocolateFactoryVotes += 1
+ 
+}
+}
 /*:
  ### Extension:
  In another poll, for choosing a school mascot, you decide to add an `undecided` option:
@@ -38,5 +47,21 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  - experiment:
  In the Arrays and Loops vote counting exercise, an extension exercise asked you to write a single function that could calculate the results of any Boolean vote. What prevents you from writing a single function for calculating both `tripDestinationVotes` and `mascotVotes`?
  */
+var salamandervote = 0
+var mascotVote = 0
+var neitherVote = 0
+for mascotVote in mascotVotes{
 
+switch mascotVote {
+case .marmot:
+  salamandervote += 1
+case .salamander:
+  salamandervote += 1
+
+default:
+  chocolateFactoryVotes += 1
+ 
+}
+}
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)
+//What prevents you from writing a single function for calculating both tripDestinationVotes and mascotVotes?

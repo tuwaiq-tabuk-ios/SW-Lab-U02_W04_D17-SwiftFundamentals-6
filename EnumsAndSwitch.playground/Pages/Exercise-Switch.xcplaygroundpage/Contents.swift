@@ -15,7 +15,24 @@ score(target: .red)    // This should be 10
 score(target: .green)  // This should be 15
 score(target: .blue)   // This should be 25
 score(target: .gold)   // This should be 50
+func score2(target: Target) -> Int {
+  switch target {
+  case .red:
+    return 10
+  case .green:
+    return 15
+  case .blue:
+    return 25
+  case .gold:
+    return 50
+  }
+}
 
+
+score2(target:.red)
+score2(target: .green)
+score2(target: .blue)
+score2(target: .gold)
 /*:
  
  _Copyright © 2017 Apple Inc._
