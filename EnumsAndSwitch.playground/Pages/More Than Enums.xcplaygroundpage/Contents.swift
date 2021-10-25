@@ -5,23 +5,23 @@
  
  For example, switch statements can work with strings and numbers. Since it’s impossible to have an exhaustive list of all string and number values, switch statements using these types require a default case.
  */
-let animal = "cat"
-
-func soundFor(animal: String) -> String {
-    switch animal {
-        case "cat":
-            return "Meow!"
-        case "dog":
-            return "Woof!"
-        case "cow":
-            return "Moo!"
-        case "chicken":
-            return "Cluck!"
-        default:
-            return "I don't know that animal!"
-    }
-}
-soundFor(animal: animal)
+//let animal = "cat"
+//
+//func soundFor(animal: String) -> String {
+//    switch animal {
+//        case "cat":
+//            return "Meow!"
+//        case "dog":
+//            return "Woof!"
+//        case "cow":
+//            return "Moo!"
+//        case "chicken":
+//            return "Cluck!"
+//        default:
+//            return "I don't know that animal!"
+//    }
+//}
+//soundFor(animal: animal)
 
 /*:
 - callout(Exercise): Call the `soundFor(animal:)` function a few times. Pass in known animals and unknown animals.\
@@ -38,3 +38,25 @@ Next revisit the cafeteria example using a switch statement.
  
 [Previous](@previous)  |  page 13 of 21  |  [Next: Back to the Cafeteria](@next)
 */
+let animal = "cat"
+
+func soundFor(animal: String) -> String {
+    switch animal {
+        case "cat":
+            return "Meow!"
+        case "dog":
+            return "Woof!"
+        case "cow":
+            return "Moo!"
+        case "chicken":
+            return "Cluck!"
+          
+        default:
+            return "I don't know that animal!"
+    }
+}
+soundFor(animal: animal)
+soundFor(animal: "dog" )
+soundFor(animal: "chicken" )
+soundFor(animal: "cow" )
+//add new animal with voice 

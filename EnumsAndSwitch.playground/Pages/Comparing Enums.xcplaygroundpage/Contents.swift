@@ -11,7 +11,7 @@ enum LunchChoice {
 /*:
  You can compare enum values using `==`, just as you have with values of the types `String` and `Int`:
 */
-let myLunch = LunchChoice.burger
+let myLunch = LunchChoice.soup
 let yourLunch = LunchChoice.burger
 
 if myLunch == yourLunch {
@@ -23,3 +23,19 @@ if myLunch == yourLunch {
 //:
 //: Next, make a better version of the `cookLunch` function using enums.\
 //: [Previous](@previous)  |  page 6 of 21  |  [Next: Enums and Functions](@next)
+enum CookLunch {
+  case pasta, burger, soup
+}
+
+
+let Mychoice = CookLunch.pasta
+let Yourchoice = CookLunch.pasta
+
+  
+if Mychoice == Yourchoice {
+    "We're having the same for lunch!"
+} else {
+    "Can I try your lunch?"
+}
+
+

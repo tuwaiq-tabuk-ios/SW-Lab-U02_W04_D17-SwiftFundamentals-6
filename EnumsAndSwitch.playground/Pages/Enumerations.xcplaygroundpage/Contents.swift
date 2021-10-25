@@ -23,12 +23,13 @@ You make instances like this:
 let choice = LunchChoice.burger
 //: One benefit of an enum is it limits the choices to one of its cases. You can’t order off-menu.\
 //: Uncomment the line below to see the error, then comment it out again when you’re done:
-//let special = LunchChoice.fish
+//let special = LunchChoice.soup
 /*:
  
  - experiment: Create some constants yourself for different cases in the enum. Notice how autocompletion shows you the possible options.
 */
-
+let choice1 = LunchChoice.burger
+let choice2 = LunchChoice.pasta
 
 
 /*:
