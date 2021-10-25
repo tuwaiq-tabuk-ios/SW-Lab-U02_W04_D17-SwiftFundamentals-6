@@ -21,9 +21,11 @@ choice = .burger
 //: - experiment: Practice assigning other values to `choice` using this shorter dot notation. Notice that the autocompletion menu pops up once you type the period.
 
 
-
-
 /*:
  Next, learn when it makes sense to use an enum.\
 [Previous](@previous)  |  page 4 of 21  |  [Next: When to Use Enums](@next)
 */
+//Experiment:
+choice = .burger
+choice = .pasta
+choice = .soup

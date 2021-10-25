@@ -40,9 +40,11 @@ func cookLunch(_ choice: LunchChoice) -> String {
     } else if choice == .soup {
         return "🍲"
     }
+  
     return "Erm... how did we get here?"
 }
-cookLunch(.soup)
+
+cookLunch(.pasta)
 /*: 
  You still need the final `return` statement. Otherwise the function causes an error because it can’t be sure you’ve covered all the possible cases in the if statements.
  
@@ -53,3 +55,5 @@ _(Hint: How would you get an enum value that didn’t match anything in the if s
 
 [Previous](@previous)  |  page 8 of 21  |  [Next: Switch](@next)
 */
+//Experiment:
+// there is noway to get an enum value that didn’t match anything in the if statement.
