@@ -30,8 +30,20 @@ let choice = LunchChoice.burger
 */
 
 
-
 /*:
  Next learn about how the type system understands enums.\
 [Previous](@previous)  |  page 3 of 21  |  [Next: Enums and Type Inference](@next)
 */
+enum LunchChoice1 {
+    case pasta
+    case burger
+    case soup
+    case steak
+   case salad
+}
+
+let steak = LunchChoice1.steak
+let salad = LunchChoice1.salad
+
+
+
