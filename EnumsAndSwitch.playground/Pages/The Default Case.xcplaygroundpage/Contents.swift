@@ -7,7 +7,7 @@ enum Quality {
     case bad, poor, acceptable, good, great
 }
 
-let quality = Quality.good
+let quality = Quality.bad
 //: The switch statement is a little different to the ones you’ve seen up to now:
 switch quality {
 case .bad:
@@ -32,3 +32,14 @@ Try adding more cases to the enum.
 
 [Previous](@previous)  |  page 11 of 21  |  [Next: Multiple Cases](@next)
 */
+let test = Quality.great
+switch test {
+case .bad:
+    print("That really won't do")
+case .poor:
+    print("That's not good enough")
+case .acceptable:
+  print("OK, I'll take it")
+default:
+    print("You did really great work")
+}

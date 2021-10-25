@@ -17,6 +17,24 @@ let tripDestinationVotes: [ClassTripDestination] = [.beach, .chocolateFactory, .
  Without counting the votes by hand, find out whether the students prefer the chocolate factory or the beach. *Hint: Check the Arrays and Loops playground for a refresher on working with collections of data.*
  */
 
+var beach = 0
+var chocolateFactory = 0
+var nither = 0
+
+for trip in tripDestinationVotes{
+  switch trip  {
+  case .beach:
+   beach += 1
+  case .chocolateFactory:
+    chocolateFactory += 1
+  }
+}
+print("------------- Exercise 1 -------------\n")
+print ("chocolateFactory votes are \(chocolateFactory)")
+print ("chocolateFactory votes are \(beach)\n")
+
+
+
 
 
 /*:
@@ -38,5 +56,25 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  - experiment:
  In the Arrays and Loops vote counting exercise, an extension exercise asked you to write a single function that could calculate the results of any Boolean vote. What prevents you from writing a single function for calculating both `tripDestinationVotes` and `mascotVotes`?
  */
+var marmot = 0
+var salamander = 0
+var neither = 0
+
+for trip in mascotVotes{
+  switch trip  {
+  case .marmot:
+    marmot += 1
+  case .salamander:
+    salamander += 1
+  case .neither:
+    neither += 1
+  }
+}
+print("------------- Exercise 2 -------------\n")
+print ("Votes for Salamander are \(salamander)")
+print ("Votes for Marmot \(marmot)")
+print ("Votes for Neither \(neither)")
+
+
 
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)
