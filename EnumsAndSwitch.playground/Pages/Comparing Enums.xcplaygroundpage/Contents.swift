@@ -23,3 +23,20 @@ if myLunch == yourLunch {
 //:
 //: Next, make a better version of the `cookLunch` function using enums.\
 //: [Previous](@previous)  |  page 6 of 21  |  [Next: Enums and Functions](@next)
+let MyLunch = LunchChoice.pasta
+let YourLunch = LunchChoice.burger
+
+if myLunch == yourLunch {
+    "we're having the same for lunch "
+} else {
+    "can I try yore lunch?"
+}
+enum cookLunch {
+    case salad, burger, chicken
+}
+let yuorLunch = cookLunch.salad
+if myLunch == yourLunch {
+    "we're having the same for lunch!"
+}else {
+    "can I try yuor lunch?"
+}

@@ -30,3 +30,13 @@ case .soup:
  
 [Previous](@previous)  |  page 10 of 21  |  [Next: The Default Case](@next)
 */
+let choice1 = LunchChoice.burger
+
+switch choice {
+case .pasta:
+    "🍝"
+case .burger:
+    "🍔"
+case .soup:
+    "🍲"
+}

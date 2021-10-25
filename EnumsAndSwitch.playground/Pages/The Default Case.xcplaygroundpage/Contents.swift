@@ -32,3 +32,29 @@ Try adding more cases to the enum.
 
 [Previous](@previous)  |  page 11 of 21  |  [Next: Multiple Cases](@next)
 */
+let test = Quality.poor
+
+ switch test {
+ case .bad:
+     print("That really won't do")
+ case .poor:
+     print("That's not good enough")
+ case .acceptable:
+   print("OK, I'll take it")
+ default:
+     print("You did really great work")
+ }
+
+
+
+ let test2 = Quality.great
+  switch test2 {
+  case .bad:
+      print("That really won't do")
+  case .poor:
+      print("That's not good enough")
+  case .acceptable:
+    print("OK, I'll take it")
+  default:
+      print("You did really great work")
+  }

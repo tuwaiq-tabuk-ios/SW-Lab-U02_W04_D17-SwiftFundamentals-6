@@ -53,3 +53,22 @@ _(Hint: How would you get an enum value that didn’t match anything in the if s
 
 [Previous](@previous)  |  page 8 of 21  |  [Next: Switch](@next)
 */
+enum lunchChoice {
+     case pasta
+     case burger
+     case soup
+     case taco
+ }
+
+let choice = lunchChoice.taco
+
+ switch choice {
+ case .pasta:
+     "🍝"
+ case .burger:
+     "🍔"
+ case .soup:
+     "🍲"
+ case .taco:
+     "🌮"
+ }

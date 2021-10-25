@@ -40,3 +40,29 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  */
 
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)
+var beachVotes = 0
+ var chocolateFactoryVotes = 0
+ for tripDestinationVote in tripDestinationVotes {
+   switch tripDestinationVote {
+   case .beach:
+     beachVotes += 1
+   default:
+     chocolateFactoryVotes += 1
+   }
+ }
+
+
+ //Ex2
+ var marmotVote = 0
+ var salamanderVote = 0
+ var neitherVote = 0
+ for mascotVote in mascotVotes {
+   switch mascotVote {
+   case .marmot:
+     marmotVote += 1
+   case .salamander:
+     salamanderVote += 1
+   default:
+     neitherVote += 1
+   }
+ }
