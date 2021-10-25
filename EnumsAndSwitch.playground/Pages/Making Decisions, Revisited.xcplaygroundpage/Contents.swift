@@ -17,9 +17,6 @@ cookLunch(choice: "pasta")
 
 //: - experiment: Ask for some different choices by calling `cookLunch(choice:)` a number of times. Ask for anything you can think of. What result do you get back?
 
-
-
-
 /*:
  This function has the following drawbacks:
  
@@ -30,3 +27,6 @@ cookLunch(choice: "pasta")
 
 [Previous](@previous)  |  page 2 of 21  |  [Next: Enumerations](@next)
 */
+cookLunch(choice: "salad")
+cookLunch(choice: "pizza")
+cookLunch(choice: "cabsah")

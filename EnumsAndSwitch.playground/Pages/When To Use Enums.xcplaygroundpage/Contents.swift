@@ -24,9 +24,23 @@
 */
 
 
-
-
-
-
 //: On the next page, learn about comparing enums.\
 //: [Previous](@previous)  |  page 5 of 21  |  [Next: Comparing Enums](@next)
+
+struct Player1 {
+    let name: String
+    let skaillLaeble: Int
+    var team: Team
+    var  position:Position
+}
+    enum Team {
+        case red, blue ,whit
+    }
+    
+    enum Position {
+        
+        case quarterback, seeker,pitche
+    }
+    
+
+    let player1 = Player1(name: "Bob", skaillLaeble: 100, team: .red , position: .quarterback)
