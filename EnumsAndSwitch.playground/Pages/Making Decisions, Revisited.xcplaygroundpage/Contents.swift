@@ -11,11 +11,32 @@ func cookLunch(choice: String) -> String {
     } else {
         return "🍲"
     }
+  
+
 }
 
 cookLunch(choice: "pasta")
 
+
 //: - experiment: Ask for some different choices by calling `cookLunch(choice:)` a number of times. Ask for anything you can think of. What result do you get back?
+
+
+print("\n\n- - - - - Exercice1 - - - - -")
+func cookLunch1(choice: String) -> String {
+    if choice == "pasta" {
+        return "🍝"
+    } else if choice == "burger" {
+        return "🍔"
+    } else {
+        return "🍲"
+    }
+  
+
+}
+
+cookLunch(choice: "pasta")
+cookLunch(choice: "burger")
+cookLunch(choice: "pasta")
 
 
 
