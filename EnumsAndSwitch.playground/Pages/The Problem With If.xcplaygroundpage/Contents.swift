@@ -40,7 +40,7 @@ func cookLunch(_ choice: LunchChoice) -> String {
     } else if choice == .soup {
         return "🍲"
     }
-    return "Erm... how did we get here?"
+      return"Erm... how did we get here?"
 }
 cookLunch(.soup)
 /*: 

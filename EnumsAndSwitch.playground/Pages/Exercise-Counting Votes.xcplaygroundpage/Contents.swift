@@ -40,3 +40,44 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  */
 
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)
+//exercise 1
+func calculateTripVotes(votes: Array<ClassTripDestination>)-> String {
+  var beachVotes = 0
+  var chocolateVotes = 0
+  
+  for vote in votes {
+    switch vote {
+    case .beach:
+      beachVotes += 1
+    case .chocolateFactory:
+      chocolateVotes += 1
+     
+    }
+  }
+return "the class votes for beach: \(beachVotes), chocolatefactory: \(chocolateVotes)"
+}
+let result = calculateTripVotes(votes: tripDestinationVotes)
+
+//exercise 2
+
+func calculateMascoVotes(votes: Array<SchoolMascotOption>) -> String{
+  var salamanderCount = 0
+  var marmotCount = 0
+  var neitherCount = 0
+  
+  for vote in votes {
+    switch vote {
+    case .marmot:
+      marmotCount += 1
+    case .neither:
+      neitherCount += 1
+    case .salamander:
+      salamanderCount += 1
+    
+    }
+  }
+
+return "vote result: salamander: \(salamanderCount), marmot: \(marmotCount), neither: \(neitherCount)"
+}
+  let mascoResult = calculateMascoVotes(votes: mascotVotes)
+

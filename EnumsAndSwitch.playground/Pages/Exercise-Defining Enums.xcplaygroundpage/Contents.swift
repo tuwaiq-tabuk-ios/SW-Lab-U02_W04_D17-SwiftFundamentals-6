@@ -9,17 +9,34 @@
 
 
 
-
 //: - callout(Exercise): Define an enum for jigsaw puzzle pieces: corner, edge, and middle.
 
 
 
-
 //: - callout(Excercise): Define an enum for the playback modes in a music app: standard, repeat, repeat all, and shuffle.
- 
- 
+
  
 
 
 
 //: [Previous](@previous)  |  page 17 of 21  |  [Next: Exercise: Counting Chickens](@next)
+//excercise1
+
+enum  CompassDirection {
+  case north, east, south, west
+}
+
+
+
+//excercise2
+
+enum JigsawPuzzlePiece {
+  case corner, edge, middle
+}
+
+
+//excercise3
+enum PlaybackMode {
+  case standard, playRepeat, repeatAll, shuffle
+}
+ 

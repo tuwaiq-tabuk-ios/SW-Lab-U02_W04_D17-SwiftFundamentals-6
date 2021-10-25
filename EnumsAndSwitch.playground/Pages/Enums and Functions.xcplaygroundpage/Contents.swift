@@ -34,4 +34,5 @@ cookLunch(.burger)
 
 [Previous](@previous)  |  page 7 of 21  |  [Next: The Problem with If](@next)
 */
- 
+cookLunch(.soup)
+cookLunch(.burger)

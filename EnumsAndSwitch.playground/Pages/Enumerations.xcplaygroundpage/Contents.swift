@@ -28,7 +28,8 @@ let choice = LunchChoice.burger
  
  - experiment: Create some constants yourself for different cases in the enum. Notice how autocompletion shows you the possible options.
 */
-
+let choice1 = LunchChoice.pasta
+let eat = LunchChoice.burger
 
 
 /*:
