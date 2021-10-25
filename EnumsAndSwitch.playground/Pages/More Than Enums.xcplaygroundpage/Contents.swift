@@ -8,33 +8,35 @@
 let animal = "cat"
 
 func soundFor(animal: String) -> String {
-    switch animal {
-        case "cat":
-            return "Meow!"
-        case "dog":
-            return "Woof!"
-        case "cow":
-            return "Moo!"
-        case "chicken":
-            return "Cluck!"
-        default:
-            return "I don't know that animal!"
-    }
+  switch animal {
+  case "cat":
+    return "Meow!"
+  case "dog":
+    return "Woof!"
+  case "cow":
+    return "Moo!"
+  case "chicken":
+    return "Cluck!"
+  default:
+    return "I don't know that animal!"
+  }
 }
 soundFor(animal: animal)
 
 /*:
-- callout(Exercise): Call the `soundFor(animal:)` function a few times. Pass in known animals and unknown animals.\
-\
-Add a few more animal cases to the switch statement and call the function to test the new cases.
+ - callout(Exercise): Call the `soundFor(animal:)` function a few times. Pass in known animals and unknown animals.\
+ \
+ Add a few more animal cases to the switch statement and call the function to test the new cases.
  */
-
+soundFor(animal: "cat")
+soundFor(animal: "dog")
+soundFor(animal: "brid")
 
 
 
 
 /*:
-Next revisit the cafeteria example using a switch statement.
+ Next revisit the cafeteria example using a switch statement.
  
-[Previous](@previous)  |  page 13 of 21  |  [Next: Back to the Cafeteria](@next)
-*/
+ [Previous](@previous)  |  page 13 of 21  |  [Next: Back to the Cafeteria](@next)
+ */
