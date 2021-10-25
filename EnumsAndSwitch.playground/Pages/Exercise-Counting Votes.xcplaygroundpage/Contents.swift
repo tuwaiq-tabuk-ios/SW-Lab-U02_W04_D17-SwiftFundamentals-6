@@ -17,8 +17,6 @@ let tripDestinationVotes: [ClassTripDestination] = [.beach, .chocolateFactory, .
  Without counting the votes by hand, find out whether the students prefer the chocolate factory or the beach. *Hint: Check the Arrays and Loops playground for a refresher on working with collections of data.*
  */
 
-
-
 /*:
  ### Extension:
  In another poll, for choosing a school mascot, you decide to add an `undecided` option:
@@ -38,5 +36,51 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  - experiment:
  In the Arrays and Loops vote counting exercise, an extension exercise asked you to write a single function that could calculate the results of any Boolean vote. What prevents you from writing a single function for calculating both `tripDestinationVotes` and `mascotVotes`?
  */
+print("\n\n- - - - - Exercice1 - - - - -")
+
+func calculateTripVotes(votes: Array<ClassTripDestination>) -> String {
+  var beachVotes = 0
+  var chocolateVotes = 0
+  
+  for vote in votes {
+    switch vote {
+    case .beach:
+      beachVotes += 1
+    case .chocolateFactory:
+      chocolateVotes += 1
+    }
+  }
+return "The class votes for beach: \(beachVotes), chocolateFactory: \(chocolateVotes)"
+}
+
+let results = calculateTripVotes(votes: tripDestinationVotes)
+
+
+
+
+print("\n\n- - - - - Exercice2 - - - - -")
+
+func CalculateMascotVotes(votes: Array<SchoolMascotOption>) -> String {
+  
+  var salamanderVotes  = 0
+  var marmotVotes = 0
+  var neitherVotes = 0
+  
+  
+  for vote in votes {
+  switch vote {
+  case .salamander:
+    salamanderVotes += 1
+  case .marmot:
+   marmotVotes += 1
+  case .neither:
+    neitherVotes += 1
+  }
+  }
+  
+  
+  return "The votes for salamander: \(salamanderVotes) , marmot : \(marmotVotes) , neither: \(neitherVotes)"
+}
+let mascotResult = CalculateMascotVotes(votes: mascotVotes)
 
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)

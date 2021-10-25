@@ -22,11 +22,39 @@
  
  - callout(Exercise): Define enums to represent the team and position options. Check on the previous pages for a refresher on the syntax.
 */
+print("\n\n- - - - - Exercice1 - - - - -")
+// Example without enums
 
-
-
-
-
-
+struct player {
+  let name: String
+  let skillLabel: Int
+  var team: String
+  var position: String
+}
+let player2 = player(name: "Bob",
+                      skillLabel: 100,
+                      team: "black",
+                      position: "quarterbac")
+                    
 //: On the next page, learn about comparing enums.\
 //: [Previous](@previous)  |  page 5 of 21  |  [Next: Comparing Enums](@next)
+struct player3 {
+  let name: String
+  let skillLabel: Int
+  var team: Team
+  var position: Position
+}
+
+enum Team {
+  case red, blue , white
+}
+
+enum Position {
+  case quarterback, seeker, pitcher
+}
+
+let player1 = player3(name: "Bob",
+                     skillLabel: 100,
+                     team: .blue,
+                     position: .quarterback)
+

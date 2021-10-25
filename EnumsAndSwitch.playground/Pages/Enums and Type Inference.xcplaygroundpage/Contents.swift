@@ -19,9 +19,9 @@ var choice: LunchChoice
 //: If Swift already knows what type to expect, you can skip the enum name. Since you’ve already specified the type of `choice`, you can leave out the enum name when assigning a value:
 choice = .burger
 //: - experiment: Practice assigning other values to `choice` using this shorter dot notation. Notice that the autocompletion menu pops up once you type the period.
-
-
-
+print("\n\n- - - - - Exercice1 - - - - -")
+choice = .pasta
+choice = .soup
 
 /*:
  Next, learn when it makes sense to use an enum.\

@@ -3,13 +3,15 @@
  
  Switch statements have a special feature: they must be _exhaustive_. This means a switch statement must exhaust every possibility of the value being checked. With an enum, you can use a different case to handle every possible value.
 */
-enum LunchChoice {
-    case pasta
-    case burger
-    case soup
-}
+//enum LunchChoice {
+    //case pasta
+    //case burger
+    //case soup
+    //case taco
+  
 
-let choice = LunchChoice.burger
+
+//let choice = LunchChoice.burger
 
 switch choice {
 case .pasta:
@@ -18,6 +20,8 @@ case .burger:
     "🍔"
 case .soup:
     "🍲"
+case.taco:
+    "🌮"
 }
 /*: 
  - callout(Exercise): Add another case, `taco` to the enum. What happens to the switch statement?
@@ -30,3 +34,25 @@ case .soup:
  
 [Previous](@previous)  |  page 10 of 21  |  [Next: The Default Case](@next)
 */
+print("\n\n- - - - - Exercice1 - - - - -")
+enum LunchChoice {
+    case pasta
+    case burger
+    case soup
+    case taco
+  
+}
+
+print("\n\n- - - - - Exercice2 - - - - -")
+let choice = LunchChoice.burger
+
+switch choice {
+case .pasta:
+    "🍝"
+case .burger:
+    "🍔"
+case .soup:
+    "🍲"
+case.taco:
+    "🌮"
+}
