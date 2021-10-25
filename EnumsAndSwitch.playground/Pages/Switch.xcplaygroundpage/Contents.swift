@@ -6,11 +6,11 @@
  They add a lot of visual noise, and they can’t tell that you’ve covered all of the cases, even though the point of enums is to provide a limited list of cases.
  
  What’s a better way to choose different courses of action based on the value of an enum?
-*/
+ */
 enum LunchChoice {
-    case pasta
-    case burger
-    case soup
+  case pasta
+  case burger
+  case soup
 }
 
 let choice = LunchChoice.burger
@@ -18,12 +18,12 @@ let choice = LunchChoice.burger
  The answer is a _switch_ statement:
  */
 switch choice {
-    case .pasta:
-        "🍝"
-    case .burger:
-        "🍔"
-    case .soup:
-        "🍲"
+case .pasta:
+  "🍝"
+case .burger:
+  "🍔"
+case .soup:
+  "🍲"
 }
 /*:
  The switch statement looks very much like the enum declaration above. That’s because they’re designed to work well together.
@@ -36,6 +36,6 @@ switch choice {
  If the value being checked matches the case statement, the code between the matched case and the next case is run. Then the switch statement, just like the if statement, is done.
  
  Next, find out some other features of switch statements.
-
-[Previous](@previous)  |  page 9 of 21  |  [Next: Exhausting the Possibilities](@next)
-*/
+ 
+ [Previous](@previous)  |  page 9 of 21  |  [Next: Exhausting the Possibilities](@next)
+ */

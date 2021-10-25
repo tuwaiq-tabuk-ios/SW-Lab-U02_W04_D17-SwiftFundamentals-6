@@ -21,7 +21,8 @@
  `position` would also be an enum: `.quarterback`, `.seeker`, `.pitcher`, and so on, depending on how you design the game. 
  
  - callout(Exercise): Define enums to represent the team and position options. Check on the previous pages for a refresher on the syntax.
-*/
+ */
+
 
 
 
@@ -30,3 +31,34 @@
 
 //: On the next page, learn about comparing enums.\
 //: [Previous](@previous)  |  page 5 of 21  |  [Next: Comparing Enums](@next)
+//Exercise with Enums
+struct Player{
+  let name :String
+  let skillLevel : Int
+  var team : TeamChoise
+  var position : PositionChoise
+  
+}
+enum TeamChoise {
+  case red,blue
+}
+enum PositionChoise {
+  case quarterback,seeker,pitcher
+}
+let player = Player(name: "Mohammed",
+                    skillLevel: 100,
+                    team: .red,
+                    position: .seeker)
+
+
+//Exercise without Enums
+struct Player2{
+  let name :String
+  let skillLevel : Int
+  var team : String
+  var position : String
+}
+let player2 = Player2(name: "Resam",
+                      skillLevel: 50 ,
+                      team: "bink",
+                      position: "pitcher")
