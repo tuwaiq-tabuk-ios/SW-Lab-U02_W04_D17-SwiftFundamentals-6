@@ -3,18 +3,18 @@
  
  This enum represents targets that the player might hit in a game:
 */
-enum Target {
-    case red, green, blue, gold
-}
-//: This function returns a score given a particular target:
-func score(target: Target) -> Int {
-    return 0
-}
+//enum Target {
+//    case red, green, blue, gold
+//}
+////: This function returns a score given a particular target:
+//func score(target: Target) -> Int {
+//    return 0
+//}
 //: - callout(Exercise): Update the `score(target:)` function to use a switch statement and return the correct score for each target. The statements below tell you the values to aim for:
-score(target: .red)    // This should be 10
-score(target: .green)  // This should be 15
-score(target: .blue)   // This should be 25
-score(target: .gold)   // This should be 50
+//score(target: .red)    // This should be 10
+//score(target: .green)  // This should be 15
+//score(target: .blue)   // This should be 25
+//score(target: .gold)   // This should be 50
 
 /*:
  
@@ -27,3 +27,24 @@ score(target: .gold)   // This should be 50
  _THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
  */
 //: [Previous](@previous)  |  page 21 of 21
+enum Target {
+    case red, green, blue, gold
+}
+//: This function returns a score given a particular target:
+func score(target: Target) -> Int {
+  switch target{
+  case .blue:
+    return 25
+  case .red:
+    return 10
+  case .green:
+    return 15
+  case .gold:
+    return 50
+  
+  }
+}
+score(target: .red)    // This should be 10
+score(target: .green)  // This should be 15
+score(target: .blue)   // This should be 25
+score(target: .gold)   // This should be 50
