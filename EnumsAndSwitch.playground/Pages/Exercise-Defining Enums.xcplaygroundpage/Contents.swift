@@ -23,3 +23,18 @@
 
 
 //: [Previous](@previous)  |  page 17 of 21  |  [Next: Exercise: Counting Chickens](@next)
+print("\n- - - - - Exercice1 - - - - -")
+enum CompassDirections {
+  case  north , east , south , west
+}
+
+print("\n\n- - - - - Exercice2 - - - - -")
+
+enum JigsawPuzzl {
+  case  corner, edge , middle
+}
+
+print("\n\n- - - - - Exercice3 - - - - -")
+enum PlaybackModes {
+  case standard, playRepeat, repeatAll, shuffle
+}
