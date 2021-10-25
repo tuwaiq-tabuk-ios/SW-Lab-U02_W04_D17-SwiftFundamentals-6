@@ -25,8 +25,23 @@
 
 
 
-
-
-
 //: On the next page, learn about comparing enums.\
 //: [Previous](@previous)  |  page 5 of 21  |  [Next: Comparing Enums](@next)
+enum position  {
+    case quarterback, seeker, pitcher
+}
+
+enum team  {
+    case red, blue
+}
+
+struct Player {
+    let name:String
+    let skillLevel:Int
+    var team: team
+    var position:position
+}
+
+let player1 = Player(name: "azooz", skillLevel: 100, team: .blue, position: .quarterback)
+let player2 = Player(name: "ahmad", skillLevel: 80, team: .red, position: .seeker)
+

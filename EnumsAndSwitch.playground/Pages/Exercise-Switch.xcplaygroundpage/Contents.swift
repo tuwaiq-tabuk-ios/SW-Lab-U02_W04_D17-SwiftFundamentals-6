@@ -27,3 +27,19 @@ score(target: .gold)   // This should be 50
  _THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE._
  */
 //: [Previous](@previous)  |  page 21 of 21
+func score1(target: Target) -> Int {
+    switch target {
+    case .blue:
+        return 25
+    case .red:
+        return 10
+    case .green:
+        return 25
+    case .gold:
+        return 50
+    }
+}
+let color = score1(target: .blue)
+let color1 = score1(target: .red)
+let color2 = score1(target: .green)
+let color3 = score1(target: .gold)

@@ -62,3 +62,25 @@ oneSuit.beats(oneSuit)
  
 [Previous](@previous)  |  page 15 of 21  |  [Next: Wrapup](@next)
 */
+enum Suit2 {
+    case spades, hearts, diamonds, clubs
+    
+    var emoji: String {
+        switch self {
+        case .spades: return "♠️"
+        case .hearts: return "❤️"
+        case .diamonds: return "♦️"
+        case .clubs: return "♣️"
+        }
+    }
+    
+    func emoji(_ otherSuit: Suit2) -> String {
+        return self.emoji
+    }
+}
+
+let oneSuit1 = Suit2.spades
+let otherSuit1 = Suit2.clubs
+oneSuit1.emoji(otherSuit1)
+oneSuit1.emoji(oneSuit1)
+

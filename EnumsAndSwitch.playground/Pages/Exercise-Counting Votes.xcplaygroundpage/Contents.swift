@@ -17,8 +17,6 @@ let tripDestinationVotes: [ClassTripDestination] = [.beach, .chocolateFactory, .
  Without counting the votes by hand, find out whether the students prefer the chocolate factory or the beach. *Hint: Check the Arrays and Loops playground for a refresher on working with collections of data.*
  */
 
-
-
 /*:
  ### Extension:
  In another poll, for choosing a school mascot, you decide to add an `undecided` option:
@@ -40,3 +38,40 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  */
 
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)
+var chocolatefactory = 0
+
+var beachVotes = 0
+for tripDestinationVotes in tripDestinationVotes {
+    switch tripDestinationVotes{
+     case .beach:
+    beachVotes += 1
+    default:
+    chocolatefactory += 1
+}
+
+}
+
+
+var marmotVotes = 0
+var salamanderVotes = 0
+var neitherVotes = 0
+for mascotVotes in mascotVotes {
+    
+    switch mascotVotes {
+    
+    case .marmot:
+        marmotVotes += 1
+        
+    case .salamander:
+        salamanderVotes += 1
+   
+    case .neither:
+        neitherVotes += 1
+    
+   
+   
+    
+    
+   
+    }
+}
