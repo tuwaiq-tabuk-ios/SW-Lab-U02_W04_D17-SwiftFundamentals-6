@@ -35,3 +35,11 @@ let choice = LunchChoice.burger
  Next learn about how the type system understands enums.\
 [Previous](@previous)  |  page 3 of 21  |  [Next: Enums and Type Inference](@next)
 */
+// then comment it out again when you’re done
+// no member fish on LunchChoice
+
+
+let burger = LunchChoice.burger
+let pasta = LunchChoice.pasta
+let soup = LunchChoice.soup
+

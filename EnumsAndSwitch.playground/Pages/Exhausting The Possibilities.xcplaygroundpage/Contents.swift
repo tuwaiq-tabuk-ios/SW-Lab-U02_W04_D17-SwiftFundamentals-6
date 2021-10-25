@@ -30,3 +30,33 @@ case .soup:
  
 [Previous](@previous)  |  page 10 of 21  |  [Next: The Default Case](@next)
 */
+
+
+
+
+///// Exercise1
+enum LunchChoice1 {
+  case pasta
+  case burger
+  case soup
+  case taco
+}
+
+// What happens to the switch statement?
+// add missing case taco in to Swswitch
+
+// Exercise2
+
+
+let choice1 = LunchChoice1.burger
+
+switch choice1 {
+case .pasta:
+  "🍝"
+case .burger:
+  "🍔"
+case .soup:
+  "🍲"
+case .taco:
+  "🌮"
+}

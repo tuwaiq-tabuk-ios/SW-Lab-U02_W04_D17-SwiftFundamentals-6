@@ -30,3 +30,15 @@ cookLunch(choice: "pasta")
 
 [Previous](@previous)  |  page 2 of 21  |  [Next: Enumerations](@next)
 */
+
+// Experiment
+cookLunch(choice: "pasta")
+cookLunch(choice: "burger")
+cookLunch(choice: "rise")
+cookLunch(choice: "eggs")
+
+/*
+ What result do you get back?
+    back the emoji of the food ,if you ask for anything other than exactly "pasta" or "burger" , you get soup.
+
+ */

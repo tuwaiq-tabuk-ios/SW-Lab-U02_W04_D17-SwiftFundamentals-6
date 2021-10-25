@@ -16,7 +16,17 @@ let tripDestinationVotes: [ClassTripDestination] = [.beach, .chocolateFactory, .
  - callout(Exercise):
  Without counting the votes by hand, find out whether the students prefer the chocolate factory or the beach. *Hint: Check the Arrays and Loops playground for a refresher on working with collections of data.*
  */
+var beachVotes = 0
+var chocolateFactoryVotes = 0
 
+for tripDestinationVote in tripDestinationVotes {
+  switch tripDestinationVote {
+  case .beach:
+    beachVotes += 1
+  default:
+    chocolateFactoryVotes += 1
+  }
+}
 
 
 /*:
@@ -39,4 +49,23 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  In the Arrays and Loops vote counting exercise, an extension exercise asked you to write a single function that could calculate the results of any Boolean vote. What prevents you from writing a single function for calculating both `tripDestinationVotes` and `mascotVotes`?
  */
 
+var marmotVotes = 0
+var neitherVotes = 0
+var salamanderVotes = 0
+
+for mascotVote in mascotVotes {
+  switch mascotVote {
+  case .marmot:
+    marmotVotes += 1
+  case .neither:
+    marmotVotes += 1
+  default:
+    salamanderVotes += 1
+  }
+}
+
+
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)
+/// What prevents you from writing a single function for calculating both tripDestinationVotes and mascotVotes?
+///
+/// No can't write a single function for calculating both because has different Enums
