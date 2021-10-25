@@ -29,7 +29,8 @@
  Rewriting the function to use each specific case doesn't help the situation much:
 */
 enum LunchChoice {
-    case pasta, burger, soup
+    //case pasta, burger, soup
+  case pasta, burger, soup,Salad
 }
 
 func cookLunch(_ choice: LunchChoice) -> String {
@@ -53,3 +54,4 @@ _(Hint: How would you get an enum value that didn’t match anything in the if s
 
 [Previous](@previous)  |  page 8 of 21  |  [Next: Switch](@next)
 */
+cookLunch(.Salad)
