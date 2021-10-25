@@ -30,3 +30,8 @@ cookLunch(choice: "pasta")
 
 [Previous](@previous)  |  page 2 of 21  |  [Next: Enumerations](@next)
 */
+//Experiment:
+cookLunch(choice:"pasta")
+cookLunch(choice:"burger")
+cookLunch(choice:"pizza")
+

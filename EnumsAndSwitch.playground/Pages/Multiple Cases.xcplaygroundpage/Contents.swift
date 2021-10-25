@@ -3,7 +3,7 @@
  
  On the previous page you used a default case to match three of the values in this enum:
 */
-enum Quality {
+/* enum Quality {
     case bad, poor, acceptable, good, great
 }
 
@@ -20,7 +20,7 @@ case .poor:
     print("That's not good enough")
 case .acceptable, .good, .great:
     print("OK, I'll take it")
-}
+}*/
 /*:
  - callout(Exercise): Add a new case, `terrible`, to the enum. 
  
@@ -30,3 +30,22 @@ case .acceptable, .good, .great:
 
 [Previous](@previous)  |  page 12 of 21  |  [Next: More Than Enums](@next)
 */
+//Exercise:
+
+enum Quality {
+  
+  // added "terrible" case:
+    case bad, poor, acceptable, good, great, terrible
+}
+
+let quality = Quality.good
+
+switch quality {
+
+case .bad, .terrible:
+    print("That really won't do")
+case .poor:
+    print("That's not good enough")
+case .acceptable, .good, .great:
+    print("OK, I'll take it")
+}
