@@ -41,6 +41,7 @@ func cookLunch(_ choice: LunchChoice) -> String {
         return "🍲"
     }
     return "Erm... how did we get here?"
+  //return "Erm... how did we get here?"
 }
 cookLunch(.soup)
 /*: 

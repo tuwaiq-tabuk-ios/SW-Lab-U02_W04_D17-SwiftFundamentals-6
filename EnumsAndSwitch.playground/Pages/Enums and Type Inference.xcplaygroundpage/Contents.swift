@@ -22,8 +22,10 @@ choice = .burger
 
 
 
-
 /*:
  Next, learn when it makes sense to use an enum.\
 [Previous](@previous)  |  page 4 of 21  |  [Next: When to Use Enums](@next)
 */
+
+choice = .soup
+choice = .pasta
