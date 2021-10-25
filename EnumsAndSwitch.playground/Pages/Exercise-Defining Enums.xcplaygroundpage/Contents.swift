@@ -23,3 +23,20 @@
 
 
 //: [Previous](@previous)  |  page 17 of 21  |  [Next: Exercise: Counting Chickens](@next)
+     // Ex1. . . . . . . . . . . . . . . . . . . . .
+
+enum compass {
+    
+    case North, East, South, West
+}
+     // Ex2. . . . . . . . . . . . . . . . . . . . .
+enum puzzle {
+    
+    case corner, edge, middle
+}
+
+     //Ex3. . . . . . . . . . . . . . .. . . . . . .
+enum playback {
+    
+    case standard, Repeat, repeatAll, shuffle
+}
