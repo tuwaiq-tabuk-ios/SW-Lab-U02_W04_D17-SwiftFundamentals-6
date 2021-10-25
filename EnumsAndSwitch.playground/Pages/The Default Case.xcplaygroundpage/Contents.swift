@@ -7,13 +7,17 @@ enum Quality {
     case bad, poor, acceptable, good, great
 }
 
-let quality = Quality.good
+var quality = Quality.good
 //: The switch statement is a little different to the ones you’ve seen up to now:
 switch quality {
 case .bad:
     print("That really won't do")
 case .poor:
     print("That's not good enough")
+case .acceptable:
+    print("It's okay")
+case .great:
+    print("that's good enough for me")
 default:
     print("OK, I'll take it")
 }
@@ -32,3 +36,48 @@ Try adding more cases to the enum.
 
 [Previous](@previous)  |  page 11 of 21  |  [Next: Multiple Cases](@next)
 */
+
+let quality2 = Quality.good
+
+switch quality2 {
+ default:
+     print("OK, I'll take it")
+ }
+
+
+
+ let quality3 = Quality.good
+
+ switch quality3 {
+ case .bad:
+     print("That really won't do")
+ case .poor:
+     print("That's not good enough")
+ case .good:
+   print("That's good")
+ case .great:
+   print("That's great")
+ default:
+     print("OK, I'll take it")
+ }
+
+
+
+ enum Quality2 {
+     case bad, poor, acceptable, good, great, notBad
+ }
+
+ let quality4 = Quality2.notBad
+
+ switch quality4 {
+ case .bad:
+     print("That really won't do")
+ case .poor:
+     print("That's not good enough")
+ case .good:
+   print("That's good")
+ case .great:
+   print("That's great")
+ default:
+     print("OK, I'll take it")
+ }

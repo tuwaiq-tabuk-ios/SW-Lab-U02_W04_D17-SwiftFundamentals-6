@@ -20,7 +20,9 @@ var choice: LunchChoice
 choice = .burger
 //: - experiment: Practice assigning other values to `choice` using this shorter dot notation. Notice that the autocompletion menu pops up once you type the period.
 
-
+choice = .soup
+choice = .burger
+choice = .pasta
 
 
 /*:
