@@ -17,9 +17,9 @@ cookLunch(choice: "pasta")
 
 //: - experiment: Ask for some different choices by calling `cookLunch(choice:)` a number of times. Ask for anything you can think of. What result do you get back?
 
-
-
-
+cookLunch(choice: "Chesscake")
+cookLunch(choice: "sandwich")
+cookLunch(choice: "salad")
 /*:
  This function has the following drawbacks:
  

@@ -30,3 +30,18 @@ case .acceptable, .good, .great:
 
 [Previous](@previous)  |  page 12 of 21  |  [Next: More Than Enums](@next)
 */
+enum Quality1 {
+      case bad, poor, acceptable, good, great, terrible
+  }
+
+  let quality1 = Quality1.terrible
+  switch quality1 {
+  case .bad:
+      print("That really won't do")
+  case .poor:
+      print("That's not good enough")
+  case .acceptable, .good, .great:
+      print("OK, I'll take it")
+  default:
+    print("You did terrible work! Try much harder")
+  }
