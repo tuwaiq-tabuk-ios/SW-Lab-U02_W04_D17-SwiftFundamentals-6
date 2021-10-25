@@ -38,3 +38,43 @@ Next revisit the cafeteria example using a switch statement.
  
 [Previous](@previous)  |  page 13 of 21  |  [Next: Back to the Cafeteria](@next)
 */
+print(" - - - Exercise1 - - - ")
+let animal2 = "cow"
+
+soundFor(animal: animal2)
+print(soundFor(animal: animal2))
+
+let animal3 = "chicken"
+
+soundFor(animal: animal3)
+print(soundFor(animal: animal3))
+
+
+let animal4 = "snak"
+
+soundFor(animal: animal4)
+//print(soundFor(animal: animal4))
+
+print(" - - - Exercise2 - - - ")
+
+let animal5 = "lion"
+
+func soundFor(animal5: String) -> String{
+  switch animal5 {
+  case "cat":
+    return "Meow!"
+  case "dog":
+      return "Woof!"
+  case "cow":
+      return "Moo!"
+  case "chicken":
+      return "Cluck!"
+  case "lion":
+    return "roar"
+  default:
+      return "I don't know that animal!"
+  }
+}
+
+soundFor(animal5: animal5)
+print(soundFor(animal5: animal5))

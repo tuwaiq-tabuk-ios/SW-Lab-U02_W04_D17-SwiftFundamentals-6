@@ -20,6 +20,8 @@ case .poor:
     print("That's not good enough")
 case .acceptable, .good, .great:
     print("OK, I'll take it")
+//case .acceptable, .good, .great , .terrible:
+//  print("OK, I'll take it")
 }
 /*:
  - callout(Exercise): Add a new case, `terrible`, to the enum. 
@@ -30,3 +32,19 @@ case .acceptable, .good, .great:
 
 [Previous](@previous)  |  page 12 of 21  |  [Next: More Than Enums](@next)
 */
+print(" - - - Exercise1 - - - ")
+
+enum Quality2{
+  case bad, poor, acceptable, good, great, terrible
+}
+
+let quality2 = Quality2.terrible
+
+switch quality2{
+case .acceptable, .good, .great, .terrible:
+  print("OK, I'll take it")
+case .poor:
+  print("That's not good enough")
+case .bad:
+  print("That really won't do")
+}
