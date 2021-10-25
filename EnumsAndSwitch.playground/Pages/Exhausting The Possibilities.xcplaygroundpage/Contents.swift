@@ -7,6 +7,7 @@ enum LunchChoice {
     case pasta
     case burger
     case soup
+    case taco
 }
 
 let choice = LunchChoice.burger
@@ -18,6 +19,9 @@ case .burger:
     "🍔"
 case .soup:
     "🍲"
+case .taco:
+   "🌮"
+
 }
 /*: 
  - callout(Exercise): Add another case, `taco` to the enum. What happens to the switch statement?
@@ -30,3 +34,4 @@ case .soup:
  
 [Previous](@previous)  |  page 10 of 21  |  [Next: The Default Case](@next)
 */
+

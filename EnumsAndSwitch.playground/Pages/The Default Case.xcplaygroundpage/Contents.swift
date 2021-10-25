@@ -7,13 +7,16 @@ enum Quality {
     case bad, poor, acceptable, good, great
 }
 
-let quality = Quality.good
+let quality = Quality.great
+
 //: The switch statement is a little different to the ones you’ve seen up to now:
 switch quality {
 case .bad:
     print("That really won't do")
 case .poor:
     print("That's not good enough")
+case .great:
+    print("go hed Naiec")
 default:
     print("OK, I'll take it")
 }

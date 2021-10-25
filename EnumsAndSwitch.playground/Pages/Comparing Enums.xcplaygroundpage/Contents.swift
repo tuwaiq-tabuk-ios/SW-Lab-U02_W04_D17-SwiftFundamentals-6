@@ -6,7 +6,7 @@
  Here's the `LunchChoice` enum you’ve seen before:
  */
 enum LunchChoice {
-    case pasta, burger, soup
+    case pasta, burger, soup , pitza
 }
 /*:
  You can compare enum values using `==`, just as you have with values of the types `String` and `Int`:
@@ -23,3 +23,11 @@ if myLunch == yourLunch {
 //:
 //: Next, make a better version of the `cookLunch` function using enums.\
 //: [Previous](@previous)  |  page 6 of 21  |  [Next: Enums and Functions](@next)
+let myLunch1 = LunchChoice.pitza
+let yourLunch1 = LunchChoice.burger
+
+if myLunch1 == yourLunch1 {
+    "We're having the same for lunch!"
+} else {
+    "Can I try your lunch?"
+}
