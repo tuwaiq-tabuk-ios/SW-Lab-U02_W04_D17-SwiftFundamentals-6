@@ -28,6 +28,31 @@
  
  Rewriting the function to use each specific case doesn't help the situation much:
 */
+//enum LunchChoice {
+//    case pasta, burger, soup
+//}
+//
+//func cookLunch(_ choice: LunchChoice) -> String {
+//    if choice == .pasta {
+//        return "🍝"
+//    } else if choice == .burger {
+//        return "🍔"
+//    } else if choice == .soup {
+//        return "🍲"
+//    }
+//    return "Erm... how did we get here?"
+//}
+//cookLunch(.soup)
+/*: 
+ You still need the final `return` statement. Otherwise the function causes an error because it can’t be sure you’ve covered all the possible cases in the if statements.
+ 
+ - experiment: Comment out the final `return` statement to see an error. Uncomment it again, and try to change the value passed in to `cookLunch` so that the final `else` statement is called.\
+_(Hint: How would you get an enum value that didn’t match anything in the if statement?)_
+ 
+ Apparently if statements aren’t a great fit when dealing with enums. So what is?
+
+[Previous](@previous)  |  page 8 of 21  |  [Next: Switch](@next)
+*/
 enum LunchChoice {
     case pasta, burger, soup
 }
@@ -43,13 +68,17 @@ func cookLunch(_ choice: LunchChoice) -> String {
     return "Erm... how did we get here?"
 }
 cookLunch(.soup)
-/*: 
- You still need the final `return` statement. Otherwise the function causes an error because it can’t be sure you’ve covered all the possible cases in the if statements.
  
- - experiment: Comment out the final `return` statement to see an error. Uncomment it again, and try to change the value passed in to `cookLunch` so that the final `else` statement is called.\
-_(Hint: How would you get an enum value that didn’t match anything in the if statement?)_
- 
- Apparently if statements aren’t a great fit when dealing with enums. So what is?
+var myLunch = LunchChoice.burger
 
-[Previous](@previous)  |  page 8 of 21  |  [Next: Switch](@next)
-*/
+switch myLunch {
+case .pasta:
+  "🍝"
+case .burger:
+  "🍔"
+case .soup:
+  "🍲"
+default: "Erm... how did we get here?"
+}
+print(myLunch)
+

@@ -16,9 +16,10 @@ func cookLunch(choice: String) -> String {
 cookLunch(choice: "pasta")
 
 //: - experiment: Ask for some different choices by calling `cookLunch(choice:)` a number of times. Ask for anything you can think of. What result do you get back?
-
-
-
+cookLunch(choice: "Borito")
+cookLunch(choice: "chinese Nodels")
+cookLunch(choice: "ramion")
+cookLunch(choice: "pasta")
 
 /*:
  This function has the following drawbacks:
@@ -30,3 +31,4 @@ cookLunch(choice: "pasta")
 
 [Previous](@previous)  |  page 2 of 21  |  [Next: Enumerations](@next)
 */
+print(cookLunch(choice: "pasta"))

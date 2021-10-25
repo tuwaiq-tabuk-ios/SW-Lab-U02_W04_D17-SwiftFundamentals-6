@@ -4,11 +4,7 @@
  The following struct describes a type of enemy in a game:
 */
 
-struct Enemy {
-    let strength: Int
-    let speed: Int
-    let weapon: Bool
-}
+//
 /*: 
  As your game has developed, you’ve decided that your enemies might have more than one type of weapon.
  
@@ -17,3 +13,18 @@ struct Enemy {
 
 [Previous](@previous)  |  page 19 of 21  |  [Next: Exercise: Counting Votes](@next)
 */
+struct Enemy {
+  
+    let strength: Int
+    let speed: Int
+    let weapon: Weapon
+  
+
+  enum Weapon {
+    case none, sword, rubberMallet, gun, RBG
+  }
+  
+}
+let enemy = Enemy(strength: 30, speed: 7, weapon: .sword)
+
+

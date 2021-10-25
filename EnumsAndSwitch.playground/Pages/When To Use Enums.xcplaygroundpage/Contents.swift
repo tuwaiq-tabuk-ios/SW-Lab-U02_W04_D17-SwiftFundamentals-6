@@ -25,8 +25,48 @@
 
 
 
+//func players(name: String, skillLevel: Int) -> String{
+//  return "Name:\(name)\nSkill Level: \(skillLevel)"
+//}
+//
+//
+//var teams: Team
+//teams = .blue
+//var positions: Position
+//positions = .pitcher
+//
+//print("\(players(name: "Aisha", skillLevel: 20))\nTeam:\(teams)\nPosition:\(positions)" )
+//print("----------------------- Vs.-----------------------------")
+//teams = .red
+//positions = .seeker
+//print("\(players(name: "Remaa", skillLevel: 20))\nTeam:\(teams)\nPosition:\(positions)" )
+//print("----------------------- Vs.-----------------------------")
+//teams = .green
+//positions = .quarterback
+//print("\(players(name: "Ameraa", skillLevel: 20))\nTeam:\(teams)\nPosition:\(positions)" )
+
+
+
 
 
 
 //: On the next page, learn about comparing enums.\
 //: [Previous](@previous)  |  page 5 of 21  |  [Next: Comparing Enums](@next)
+struct Player{
+  let name: String
+  let skillLvel: Int
+  let team:Team
+  let position: Position
+}
+enum Team {
+  case red, blue, green
+}
+
+
+enum Position {
+  case quarterback , seeker , pitcher
+}
+
+
+
+let player1 = Player(name: "Aisha", skillLvel: 45, team: .blue, position: .quarterback)
