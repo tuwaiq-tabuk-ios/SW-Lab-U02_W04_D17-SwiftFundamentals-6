@@ -23,7 +23,7 @@ switch choice {
     case .burger:
         "🍔"
     case .soup:
-        "🍲"
+        "🍲"  
 }
 /*:
  The switch statement looks very much like the enum declaration above. That’s because they’re designed to work well together.
