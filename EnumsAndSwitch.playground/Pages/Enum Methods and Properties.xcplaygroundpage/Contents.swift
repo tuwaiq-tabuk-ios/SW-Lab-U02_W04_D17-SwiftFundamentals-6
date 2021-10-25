@@ -44,11 +44,23 @@ enum Suit {
         case .clubs: return 1
         }
     }
+  
+ //I make the experiment here
+  // اقدر استخدم func لها
+      var emoji: String {
+          switch self {
+          case .spades: return "♠️"
+          case .hearts: return "❤️"
+          case .diamonds: return "♦️"
+          case .clubs: return "♣️"
+          }
+    }
     
     func beats(_ otherSuit: Suit) -> Bool {
         return self.rank > otherSuit.rank
     }
 }
+
 
 let oneSuit = Suit.spades
 let otherSuit = Suit.clubs
