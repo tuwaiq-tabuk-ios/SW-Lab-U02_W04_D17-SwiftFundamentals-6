@@ -30,3 +30,23 @@ case .soup:
  
 [Previous](@previous)  |  page 10 of 21  |  [Next: The Default Case](@next)
 */
+enum LunchChoice1 {
+    case pasta
+    case burger
+    case soup
+    case taco
+}
+
+let choice1 = LunchChoice1.taco
+
+switch choice1 {
+case .pasta:
+    "🍝"
+case .burger:
+    "🍔"
+case .soup:
+    "🍲"
+case .taco:
+    "🌮"
+    
+}

@@ -6,7 +6,7 @@
  Here's the `LunchChoice` enum you’ve been working with:
 */
 enum LunchChoice {
-    case pasta, burger, soup
+    case pasta, burger, soup , Cake , Salad
 }
 //: You could rewrite the `cookLunch` function from earlier:
 func cookLunch(_ choice: LunchChoice) -> String {
@@ -22,9 +22,8 @@ func cookLunch(_ choice: LunchChoice) -> String {
 
 cookLunch(.burger)
 //: - experiment: Call the function a few more times, passing in different food choices.
-
-
-
+cookLunch(.Cake)
+cookLunch(.Salad)
 /*:
  Using the `LunchChoice` enum instead of a string solves the issues that this function had when it took a `String` value. There was no way to know what was on the menu.
  

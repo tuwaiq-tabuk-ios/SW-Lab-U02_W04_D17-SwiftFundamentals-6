@@ -8,7 +8,7 @@
  What’s a better way to choose different courses of action based on the value of an enum?
 */
 enum LunchChoice {
-    case pasta
+    case pasta 
     case burger
     case soup
 }
