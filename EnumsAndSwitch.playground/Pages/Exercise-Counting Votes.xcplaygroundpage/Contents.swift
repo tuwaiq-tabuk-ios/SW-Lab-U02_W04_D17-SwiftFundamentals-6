@@ -16,8 +16,22 @@ let tripDestinationVotes: [ClassTripDestination] = [.beach, .chocolateFactory, .
  - callout(Exercise):
  Without counting the votes by hand, find out whether the students prefer the chocolate factory or the beach. *Hint: Check the Arrays and Loops playground for a refresher on working with collections of data.*
  */
-
-
+func calculatetripVotes(votes : Array<ClassTripDestination> ) -> String {
+  var beachVotes = 0
+  var chocolateVotes = 0
+  
+  for vote in votes{
+    switch vote {
+    case .beach:
+    beachVotes += 1
+    case .chocolateFactory:
+      chocolateVotes += 1
+  }
+  
+}
+  return "The votes for beach :\(beachVotes),And The votes for chocolateFactory:\(chocolateVotes)"
+}
+let results = calculatetripVotes(votes: tripDestinationVotes)
 
 /*:
  ### Extension:
@@ -38,5 +52,28 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  - experiment:
  In the Arrays and Loops vote counting exercise, an extension exercise asked you to write a single function that could calculate the results of any Boolean vote. What prevents you from writing a single function for calculating both `tripDestinationVotes` and `mascotVotes`?
  */
+func calculatemascotVotes(votes: Array<SchoolMascotOption>)-> String{
+  var salamanderCount = 0
+  var marmotCount = 0
+  var neitherCount = 0
+  
+  for vote in votes{
+    switch vote{
+    case .marmot:
+      marmotCount += 1
+      
+    case .neither:
+      neitherCount += 1
+      
+    case .salamander:
+       salamanderCount += 1
+   
+    }
+  }
+  return "vote result : salamander:\(salamanderCount),marmot:\(marmotCount),  neither:\(neitherCount)"
+}
+let TheResult = calculatemascotVotes(votes: mascotVotes)
+
+
 
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)
