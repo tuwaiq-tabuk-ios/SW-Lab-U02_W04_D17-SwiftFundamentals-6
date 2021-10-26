@@ -29,12 +29,31 @@ soundFor(animal: animal)
 Add a few more animal cases to the switch statement and call the function to test the new cases.
  */
 
-
-
-
-
 /*:
 Next revisit the cafeteria example using a switch statement.
  
 [Previous](@previous)  |  page 13 of 21  |  [Next: Back to the Cafeteria](@next)
 */
+let animal1 = "cat"
+
+func soundFor1(animal: String) -> String {
+    switch animal {
+        case "cat":
+            return "Meow!"
+        case "dog":
+            return "Woof!"
+        case "cow":
+            return "Moo!"
+        case "chicken":
+            return "Cluck!"
+    case "falcon":
+        return "Kaaaaak"
+        default:
+            return "I don't know that animal!"
+    }
+}
+soundFor(animal: "cat")
+soundFor(animal: "bat")
+soundFor(animal: "lion")
+soundFor(animal: "cow")
+soundFor(animal: "falcon")

@@ -6,7 +6,7 @@
  Here’s the `LunchChoice` enum from the previous page. It’s written a little differently. To save space, it includes multiple cases on a single line, separated by commas:
 */
 enum LunchChoice {
-    case pasta, burger, soup
+    case pasta, burger, soup , sayadia
 }
 /*:
  On the previous page you made an enum instance like this:
@@ -22,8 +22,10 @@ choice = .burger
 
 
 
-
 /*:
  Next, learn when it makes sense to use an enum.\
 [Previous](@previous)  |  page 4 of 21  |  [Next: When to Use Enums](@next)
 */
+choice = .sayadia
+choice = .pasta
+choice = .soup
