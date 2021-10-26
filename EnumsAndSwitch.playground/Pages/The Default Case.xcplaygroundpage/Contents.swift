@@ -4,7 +4,7 @@
  This enum is used to represent how good something is:
 */
 enum Quality {
-    case bad, poor, acceptable, good, great
+    case bad, poor, acceptable, good, great , unacceptable
 }
 
 let quality = Quality.good
@@ -14,9 +14,14 @@ case .bad:
     print("That really won't do")
 case .poor:
     print("That's not good enough")
+case .great:
+    print("Great enough")
 default:
     print("OK, I'll take it")
 }
+
+
+
 /*: 
  The switch statement doesn't have a case for every possible value of the enum. Instead, there is a `default` keyword which will be used if no other matches are found. This is similar to the final `else` clause when using an if statement.
  
@@ -32,3 +37,18 @@ Try adding more cases to the enum.
 
 [Previous](@previous)  |  page 11 of 21  |  [Next: Multiple Cases](@next)
 */
+
+switch quality {
+case .good:
+    print("That really won't do")
+case .poor:
+    print("That's not good enough")
+case .great:
+    print("Great enough")
+case .bad:
+    print("so bad")
+case .unacceptable:
+    print("unacceptable")
+default:
+    print("OK, I'll take it")
+}
