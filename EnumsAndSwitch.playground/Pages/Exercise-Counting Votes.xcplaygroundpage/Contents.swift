@@ -16,6 +16,26 @@ let tripDestinationVotes: [ClassTripDestination] = [.beach, .chocolateFactory, .
  - callout(Exercise):
  Without counting the votes by hand, find out whether the students prefer the chocolate factory or the beach. *Hint: Check the Arrays and Loops playground for a refresher on working with collections of data.*
  */
+print("Exercise1")
+
+
+func calculateTripVotes(votes: Array<ClassTripDestination>) -> String {
+  
+  var beachVotes = 0
+  var chocolateVotes = 0
+  
+  for vote in votes {
+    switch vote {
+    case .beach:
+      beachVotes += 1
+    case .chocolateFactory:
+      chocolateVotes += 1
+    }
+  }
+  return "The class votes for beach: \(beachVotes), chocolateFactory: \(chocolateVotes)"
+  
+}
+let results = calculateTripVotes(votes: tripDestinationVotes)
 
 
 
@@ -40,3 +60,25 @@ let mascotVotes: [SchoolMascotOption] = [.neither, .marmot, .salamander, .neithe
  */
 
 //: [Previous](@previous)  |  page 20 of 21  |  [Next: Exercise: Switch](@next)
+print("Exercise2")
+ 
+func calculateMascotVotes(votes: Array<SchoolMascotOption>) -> String {
+  var salamanderCount = 0
+  var marmotCount = 0
+  var neitherCount = 0
+  
+  for vote in votes {
+    switch vote {
+    case .marmot:
+      marmotCount += 1
+    case .neither:
+      neitherCount += 1
+    case .salamander:
+      salamanderCount += 1
+    
+    }
+  }
+  return "Vote results: salmander: \(salamanderCount), marmot: \(marmotCount), neither: \(neitherCount)"
+  
+  let mascotResult = calculateMascotVotes(votes: mascotVotes)
+}
