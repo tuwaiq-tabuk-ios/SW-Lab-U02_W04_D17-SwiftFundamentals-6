@@ -7,6 +7,8 @@ enum LunchChoice {
     case pasta
     case burger
     case soup
+  case steak
+ case salad
 }
 /*: 
 The declaration above creates a new type, `LunchChoice`. Instances of `LunchChoice` can only be one of the three defined cases.
@@ -28,10 +30,10 @@ let choice = LunchChoice.burger
  
  - experiment: Create some constants yourself for different cases in the enum. Notice how autocompletion shows you the possible options.
 */
-
-
-
+let special = LunchChoice.steak
+let diet = LunchChoice.salad
 /*:
  Next learn about how the type system understands enums.\
 [Previous](@previous)  |  page 3 of 21  |  [Next: Enums and Type Inference](@next)
 */
+
